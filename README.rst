@@ -17,7 +17,16 @@ To install this app (assuming you are on Mac or Linux)::
     (hubtext)$ python manage.py runserver
     
 Resources
----------
+=========
+
+Hubspot docs
+------------
+
+* `Hubspot Dev wiki <http://docs.hubapi.com/>`_
+* `Performable Webhook API <http://help2.hubspot.com/display/DOC/Webhook+API>`_
+
+Django packages
+---------------
 
 * `django-twilio <https://github.com/rdegges/django-twilio>`_  
 * `django-twilio docs <http://django-twilio.readthedocs.org/en/latest/>`_
