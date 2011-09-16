@@ -1,3 +1,4 @@
 Django==1.3.1
 -e git+git://github.com/rdegges/django-twilio.git#egg=django-twilio
 -e git+git://github.com/pinax/pinax-theme-bootstrap.git#egg=pinax-theme-bootstrap
+django-tastypie==0.9.9

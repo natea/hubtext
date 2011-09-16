@@ -16,3 +16,10 @@ To install this app (assuming you are on Mac or Linux)::
     (hubtext)$ python manage.py syncdb
     (hubtext)$ python manage.py runserver
     
+Resources
+---------
+
+* `django-twilio <https://github.com/rdegges/django-twilio>`_  
+* `django-twilio docs <http://django-twilio.readthedocs.org/en/latest/>`_
+* `tastypie <https://github.com/toastdriven/django-tastypie>`_
+* `tastypie docs <http://django-tastypie.readthedocs.org/en/latest/>`_
