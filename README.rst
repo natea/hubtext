@@ -36,5 +36,5 @@ Django packages
 Custom Webhook Info
 ___________________
 
-* `Post Bin Output <http://www.postbin.org/100el3i>
-* `Event API <http://analytics.performable.com/v1/event?_n=3MjmQk5zKfkP&_a=8LuYZb>
+* `Post Bin Output <http://www.postbin.org/100el3i>`_
+* `Event API <http://analytics.performable.com/v1/event?_n=3MjmQk5zKfkP&_a=8LuYZb>`_
