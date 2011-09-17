@@ -1,8 +1,13 @@
 from django.conf.urls.defaults import patterns, include, url
 
 # Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
-# admin.autodiscover()
+from django.contrib import admin
+admin.autodiscover()
+
+message = """
+Hello, Hubspot Hackers! I hope you are having a good time so far at
+the Hackathon! Goodbye.
+"""
 
 urlpatterns = patterns('',
     # Examples:
@@ -14,4 +19,12 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
+
+#    url(r'^$', 'django_twilio.views.say', {'text': message}),
+    url(r'^testsms/$', 'hubtext.views.testsms'),
+    # url(r'^$', 'django_twilio.views.conference', {
+    #     'name': 'conf1',
+    #     'wait_url': 'http://twimlets.com/holdmusic?Bucket=com.twilio.music.rock',
+    #     'wait_method': 'GET',
+    # }),
 )

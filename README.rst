@@ -16,6 +16,10 @@ To install this app (assuming you are on Mac or Linux)::
     (hubtext)$ python manage.py syncdb
     (hubtext)$ python manage.py runserver
     
+To run the tests::
+
+    $ python manage.py test
+    
 Resources
 =========
 

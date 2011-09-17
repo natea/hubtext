@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'hubtext',                      # Or path to database file if using sqlite3.
+        'NAME': 'hubtext.db',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -117,14 +117,26 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django_twilio',
     'pinax_theme_bootstrap',
+    'hubtext',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
 
+# Twilio settings
+# add these to a local_settings.py file so that they are protected from 
+# prying eyes in the public Github repo
+#  django-twilio account credentials. These fields are required to use the REST
+# API (initiate outbound calls and SMS messages).
 TWILIO_ACCOUNT_SID = 'xxx'
 TWILIO_AUTH_TOKEN = 'xxx'
+
+# The default callerid will be used for all outgoing phone calls and SMS
+# messages if not explicitly specified. This number must be previously
+# validated with twilio in order to work. See
+# https://www.twilio.com/user/account/phone-numbers#
+TWILIO_DEFAULT_CALLERID = 'NNNNNNNNNN'
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
@@ -148,4 +160,9 @@ LOGGING = {
         },
     }
 }
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
 
