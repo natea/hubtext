@@ -29,13 +29,20 @@ Hubspot docs
 * `Hubspot Dev wiki <http://docs.hubapi.com/>`_
 * `Performable Webhook API <http://help2.hubspot.com/display/DOC/Webhook+API>`_
 
-Django packages
----------------
+Packages
+--------
 
+* `twilio-python <http://readthedocs.org/docs/twilio-python/en/latest/>`_
+* `Sending text messages with Twilio <http://readthedocs.org/docs/twilio-python/en/latest/usage/messages.html>`_
 * `django-twilio <https://github.com/rdegges/django-twilio>`_  
 * `django-twilio docs <http://django-twilio.readthedocs.org/en/latest/>`_
 * `tastypie <https://github.com/toastdriven/django-tastypie>`_
 * `tastypie docs <http://django-tastypie.readthedocs.org/en/latest/>`_
+
+Examples
+--------
+
+* `django-door <https://github.com/sunlightlabs/door-django/>`_ integrating Django with Twilio
 
 Custom Webhook Info
 ___________________

@@ -22,6 +22,8 @@ urlpatterns = patterns('',
 
 #    url(r'^$', 'django_twilio.views.say', {'text': message}),
     url(r'^testsms/$', 'hubtext.views.testsms'),
+    url(r'^sms/$', 'hubtext.views.twilio_sms'),
+    url(r'^call/$', 'hubtext.views.twilio_call')
     # url(r'^$', 'django_twilio.views.conference', {
     #     'name': 'conf1',
     #     'wait_url': 'http://twimlets.com/holdmusic?Bucket=com.twilio.music.rock',
